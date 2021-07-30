@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--声明组件扫描器-->
+    <context:component-scan base-package="xyz.guawaz.controller"/>
+    <!--
+        首先我们的页面都是放在WEB-INF目录下的，目的是保护起来，不让用户通过路径直接访问
+        这样一来就会在mv.setViewName指定视图时有长长的路径，所以就用到了springmvc的视图解析器
+
+        声明springmvc中的视图解析器，可以方便地设置视图文件的路径
+        这样当我们再mv.setViewName时，就可以使用逻辑名称（文件名）来指定视图了，
+        springmvc会自动拼接出完整路径
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--前缀：视图文件的路径-->
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <!--后缀：视图文件的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>

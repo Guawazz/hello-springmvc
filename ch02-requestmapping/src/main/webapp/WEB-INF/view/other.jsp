@@ -11,8 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>WEB-INF/view/show.jsp从Request作用域获取数据</h3><br/>
+    <h3>WEB-INF/view/other.jsp从Request作用域获取数据</h3><br/>
     <h3> msg数据：${msg} </h3><br/>
     <h3> func数据：${func} </h3><br/>
 </body>
 </html>
+
+
