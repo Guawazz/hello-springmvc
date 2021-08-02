@@ -24,4 +24,27 @@
 
     <!--mvc的注解驱动，打开就能用@ResponseBody了-->
     <mvc:annotation-driven/>
+
+    <!--第一种处理静态资源的方法
+        在springmvc的配置文件中，加入<mvc:default-servlet-handler/>
+        原理是：加入这个标签后，框架会创建控制器对象，DefaultServletHttpRequestHandler(类似我们自己创建的那个MyController)
+        DefaultServletHttpRequestHandler这个对象可以把接收到的静态资源请求转发给tomcat的default这个servlet
+
+       注意： <mvc:default-servlet-handler/> 和 @RequestMapping有冲突，需要加入<mvc:annotation-driven/>才可以
+       这种方式依赖服务器的功能
+    -->
+<!--    <mvc:default-servlet-handler/>-->
+
+    <!--第二种处理静态资源的方法
+        在springmvc的配置文件中，加入<mvc:resources mapping="" location=""/>
+
+        原理是：框架会创建ResourceHttpRequestHandler这个处理器对象，让这个处理器处理静态资源 不依赖tomcat服务器
+        mapping:访问静态资源的uri地址，使用通配符**
+        location:静态资源在你的项目中的目录位置
+       注意： <mvc:default-servlet-handler/> 和 @RequestMapping有冲突，需要加入<mvc:annotation-driven/>才可以
+       这种方式依赖服务器的功能
+
+       这种方式使用的时框架提供的处理静态资源的实现类，不依赖于服务器
+    -->
+    <mvc:resources mapping="/static/**" location="/static/" />
 </beans>

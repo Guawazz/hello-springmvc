@@ -9,10 +9,11 @@
 <html>
 <head>
     <title>Title</title>
+    <base href="http://localhost:8080/ch05_url_pattern_war_exploded/"/>
 </head>
 <body>
 
-    <form action="user/some.do" method="post">
+    <form action="user/some" method="post">
         姓名：<input type="text" name="name"> <br/>
         年龄：<input type="text" name="age"> <br/>
         <input type="submit" value="提交参数"/>

@@ -12,8 +12,20 @@
             <param-value>classpath:springmvc.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
-
     </servlet>
+    <!--
+        使用springmvc框架时，下面这个url-pattern可以使用两种值
+            1.使用扩展名方式，语法 *.xxx  xxx是自定义的扩展名，常用的方式：*.do  *.action  *.mvc等，不能用*.jsp
+            http://localhost:8080/myweb/some.do
+            2.使用斜杠"/"
+            当使用/时，它会替代tomcat中的那个default（一个专门处理静态资源和未映射到其他servlet的请求的servlet）
+            这样一来咱们的dispatcherServlet就得处理静态资源和未映射到其他servlet的请求！
+            但是它默认不会去干这些活！它只负责去控制器对象里找控制器方法~
+            怎么办呢？
+
+            方法一：使用<mvc:default-servlet-handler/>
+
+    -->
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
@@ -38,6 +50,8 @@
             <param-name>forceResponseEncoding</param-name>
             <param-value>true</param-value>
         </init-param>
+
+
     </filter>
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>

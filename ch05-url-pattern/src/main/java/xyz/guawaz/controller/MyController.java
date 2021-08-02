@@ -24,7 +24,7 @@ public class MyController {
     * 处理器方法返回String 表示逻辑视图名称 需要配置视图解析器
     * 处理器方法返回String 表示完整视图路径 不能配置视图解析器！
     * */
-    @RequestMapping(value = "/some.do")
+    @RequestMapping(value = "some")
     public ModelAndView doReturnView(String name,Integer age){
         ModelAndView mv = new ModelAndView();
         mv.addObject("myname",name);

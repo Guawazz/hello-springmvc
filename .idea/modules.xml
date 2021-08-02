@@ -7,6 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/ch03-receiveparam/ch03-receiveparam.iml" filepath="$PROJECT_DIR$/ch03-receiveparam/ch03-receiveparam.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch04-return/ch04-return.iml" filepath="$PROJECT_DIR$/ch04-return/ch04-return.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch05-url-pattern/ch05-url-pattern.iml" filepath="$PROJECT_DIR$/ch05-url-pattern/ch05-url-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch06-path/ch06-path.iml" filepath="$PROJECT_DIR$/ch06-path/ch06-path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07-hello-ssm/ch07-hello-ssm.iml" filepath="$PROJECT_DIR$/ch07-hello-ssm/ch07-hello-ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch08-forward-redirect/ch08-forward-redirect.iml" filepath="$PROJECT_DIR$/ch08-forward-redirect/ch08-forward-redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch09-exception-handler/ch09-exception-handler.iml" filepath="$PROJECT_DIR$/ch09-exception-handler/ch09-exception-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch10-interceptor/ch10-interceptor.iml" filepath="$PROJECT_DIR$/ch10-interceptor/ch10-interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch11-interceptor2/ch11-interceptor2.iml" filepath="$PROJECT_DIR$/ch11-interceptor2/ch11-interceptor2.iml" />
     </modules>
   </component>
 </project>

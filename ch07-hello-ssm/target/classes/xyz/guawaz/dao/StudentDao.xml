@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.guawaz.dao.StudentDao"><!--接口的全限定名称-->
+    <!--
+    id：方法的名称
+    resultType： mybatis.xml中为domain配置了别名，所以resultType可以直接写Student-->
+    <select id="selectStudents" resultType="Student">
+       select id,name ,age from student order by id desc
+    </select>
+
+    <insert id="insertStudent">
+        insert into student(name,age) values(#{name},#{age})
+    </insert>
+</mapper>

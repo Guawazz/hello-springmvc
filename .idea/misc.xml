@@ -6,6 +6,12 @@
     <file type="web" url="file://$PROJECT_DIR$/ch03-receiveparam" />
     <file type="web" url="file://$PROJECT_DIR$/ch04-return" />
     <file type="web" url="file://$PROJECT_DIR$/ch05-url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/ch06-path" />
+    <file type="web" url="file://$PROJECT_DIR$/ch07-hello-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/ch08-forward-redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/ch09-exception-handler" />
+    <file type="web" url="file://$PROJECT_DIR$/ch10-interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/ch11-interceptor2" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,6 +21,12 @@
         <option value="$PROJECT_DIR$/ch03-receiveparam/pom.xml" />
         <option value="$PROJECT_DIR$/ch04-return/pom.xml" />
         <option value="$PROJECT_DIR$/ch05-url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/ch06-path/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07-hello-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/ch08-forward-redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/ch09-exception-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/ch10-interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11-interceptor2/pom.xml" />
       </list>
     </option>
   </component>
